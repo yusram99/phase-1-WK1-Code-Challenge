@@ -20,7 +20,7 @@ The Net Salary Calculator calculates an individual's net salary based on the inp
 Each challenge has its own solution file. You can run the solutions in a JavaScript environment or a web browser console.
 
 1. Clone the repository to your local machine.
-2. Open the desired challenge's solution file (e.g., `Student Grade Generator.js`, `Speed Detector.js`, `Net Salary Calculator.js`) in a text editor.
+2. Open the desired challenge's solution file (e.g., `Grade.js`, `Speed.js`, `Salary.js`) in a text editor.
 3. Run the JavaScript code in a JavaScript environment or paste it into a web browser console.
 
 ## Author

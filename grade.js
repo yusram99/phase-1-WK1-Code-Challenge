@@ -1,36 +1,24 @@
-function generateStudentGrade() {
-  // Prompt the user to input student marks
-  const marks = prompt("Enter student marks (between 0 and 100):");
+// use prompt to request user for input
+//A - 79,
+//B- 60 - 79, 
+//C -  59 - 49, 
+//D - 40 - 49, 
+//E - less - 40 
 
-  // Convert the input to a number
-  const marksNumber = Number(marks);
-
-  // Check if the input is a valid number between 0 and 100
-  if (isNaN(marksNumber) || marksNumber < 0 || marksNumber > 100) {
-    console.log("Invalid input. Marks should be between 0 and 100.");
-    return;
+const gradeGenerator = function (num) {
+  let grade = prompt ("insert final grade")
+  if (num > 79) {
+    return `You got an A`;
+  } else if (num >= 60 && num <= 79) {
+    return `You got a B`;
+  } else if (num >= 49 && num <= 59) {
+    return `You got a C`;
+  } else if (num >= 40 && num < 49) {
+    return `You got a D`;
+  } else if (num < 40) {
+    return `You got an E`;
   }
-
-  // Determine the grade based on the marks
-  let grade;
-  if (marksNumber > 79) {
-    grade = "A"; // Marks greater than 79, assign grade A
-  } else if (marksNumber >= 60 && marksNumber <= 79) {
-    grade = "B"; // Marks between 60 and 79 (inclusive), assign grade B
-  } else if (marksNumber >= 50 && marksNumber <= 59) {
-    grade = "C"; // Marks between 50 and 59 (inclusive), assign grade C
-  } else if (marksNumber >= 40 && marksNumber <= 49) {
-    grade = "D"; // Marks between 40 and 49 (inclusive), assign grade D
-  } else {
-    grade = "E"; // Marks less than 40, assign grade E
-  }
-
-  // Output the grade
-  console.log("Grade: " + grade);
-}
-
-// Call the function to generate student grade
-generateStudentGrade();
+};
 
 
 
